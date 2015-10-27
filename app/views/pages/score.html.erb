@@ -1,0 +1,15 @@
+<h1>Pages#score</h1>
+<h2>Your grid was: <%= @grid_join %></h2>
+<h3>Your word was : <%= @query %></h3>
+
+
+<ul>
+  <li>Time Taken to answer: <%= @score[:time] %></li>
+  <li>Translation: <%= @score[:translation] %></li>
+  <li>Your score: <%= @score[:score] %></li>
+  <li>Message : <%= @score[:message] %></li>
+</ul>
+
+
+
+<%= link_to "start again", game_path %>

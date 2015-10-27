@@ -1,0 +1,13 @@
+<h1>Pages#game</h1>
+<h2>Your letters !</h2>
+<p><%= @grid_join %></p>
+<h3>What's your best shot ?</h3>
+<form action="/score">
+  <input type="hidden" value="<%= Time.now %>" name="start_time">
+  <input type="hidden" value="<%= @grid_join %>" name="grid">
+  <input type="text" name="query">
+  <input type="submit">
+</form>
+
+
+
